@@ -27,7 +27,8 @@ for repo in repos:
 
     print('------------------------')
     print('Name: ' + name)
-    print('Forks: ' + str(forks))
+    print('Stars: ' + str(stars))
+    print('Forks: ' + str(forks))    
     # add print statement here
     print('------------------------')
     print('')
