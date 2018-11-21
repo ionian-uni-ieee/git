@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Git & Github</title>
- 
+
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
@@ -31,7 +31,7 @@
 						<small><a href="https://github.com/nickgarlis">Νίκος Γκαρλής</a></small>
 					</p>
 				</section>
-				
+
 				<section>
 					<h3>Θα μαθουμε</h3>
 					<ul>
@@ -40,7 +40,7 @@
 						<li class="fragment">Συνεργασία μέσω git</li>
 					</ul>
 				</section>
-				
+
 				<section>
 					<h2>Γιατι Git ;</h2>
 					<ul>
@@ -63,7 +63,7 @@
 					<pre>
 						<code class="hlbash" data-trim contenteditable>
 							[nick@ubuntu ~]$ git config --global user.name "yourname"
-						
+
 							[nick@ubuntu ~]$ git config --global user.email "your@email.com"
 						</code>
 					</pre>
@@ -77,21 +77,28 @@
 						</code></pre>
 						<p> Αναθέτει στο git την διαχείριση του κώδικα στον συγκεκριμένο φάκελο <p>
 					</section>
-					
+
+					<section>
+						<pre><code class="hlbash" data-trim contenteditable>
+				[nick@ubuntu project]$ git clone
+						</code></pre>
+						<p> Δημιουργεί ένα τοπικό αντίγραφο του κώδικα στον υπολογιστή μας <p>
+					</section>
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git status
 						</code></pre>
 						<p> Δείχνει την τρέχουσα κατάσταση του repository <p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git add
 						</code></pre>
 						<p> Προσθέτει συγκεκριμένα αρχεία στο stage <p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git commit
@@ -104,92 +111,92 @@
 					<section>
 						<h2>Branches</h2>
 						<small><p>Επιτρέπουν την διατήρηση διαφόρων εκδόσεων του κώδικα μας <p>
-						<p> Όλα τα branches </p>	
+						<p> Όλα τα branches </p>
 						<ul>
 							<li> Έχουν όνομα </li>
 							<li> Δείχνουν σε ένα commit </li>
-						</ul></small>		
+						</ul></small>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git branch develop
 						</code></pre>
 						<p> Δημιουργεί ενα καινούργιο branch με όνομα "develop"<p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git checkout develop
 						</code></pre>
 						<p> Αλλάζει το τρέχον branch <p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git branch -d develop
 						</code></pre>
 						<p> Διαγράφει το branch "develop"<p>
 					</section>
-					
+
 					<section>
 						<img height="504" data-src="assets/branches.png">
 					</section>
-				</section>	
+				</section>
 
 				<section>
 					<section>
 						<h2>Remotes</h2>
 						<p> Κάθε αντίγραφο με το οποίο ανταλλάσσουμε κώδικα ονομάζεται "remote"<p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git remote
 						</code></pre>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git remote add origin https://github.com/nickgarlis/project.git
 						</code></pre>
 						<p> Προσθήκη remote <p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git push origin master
 						</code></pre>
 						<p> Push σε remote <p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
           		[nick@ubuntu project]$ git pull origin master
 						</code></pre>
 						<p> Pull από remote <p>
 					</section>
-					
+
 					<section>
 						<pre><code class="hlbash" data-trim contenteditable>
-          		[nick@ubuntu project]$ git remote rm origin 
+          		[nick@ubuntu project]$ git remote rm origin
 						</code></pre>
 						<p> Διαγραφή remote <p>
 					</section>
-					
+
 					<section>
 						<img height="623" data-src="assets/remotes0.jpg">
 					</section>
-					
+
 					<section>
 						<img height="623" data-src="assets/remotes1.jpg">
 					</section>
 				</section>
-				
+
 				<section>
 					<img height="630" data-src="assets/git-operations.png" alt="octocat">
 				</section>
-				
+
 				<section>
 					<img height="480" data-src="assets/fire.png" alt="octocat">
 				</section>
