@@ -22,10 +22,8 @@ except Exception as e:
 
 name = repo['name']
 stars = repo['stargazers_count']
-forks = repo['forks_count']
 
 print('------------------------')
 print('Name: ' + name)
-print('Forks: ' + str(forks))
 print('Stars: ' + str(stars))
 print('------------------------')
