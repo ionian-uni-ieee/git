@@ -25,10 +25,11 @@ for repo in repos:
     stars = repo['stargazers_count']
     forks = repo['forks_count']
 
-    print('------------------------')
-    print('Name: ' + name)
-    print('Forks: ' + str(forks))
-    print('Stars: ' + str(stars))
-    # add print statement here
-    print('------------------------')
-    print('')
+    if name == 'git':
+        print('------------------------')
+        print('Name: ' + name)
+        print('Forks: ' + str(forks))
+        print('Stars: ' + str(stars))
+        # add print statement here
+        print('------------------------')
+        print('')
