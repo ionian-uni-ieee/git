@@ -2,13 +2,13 @@ import json
 import urllib2
 
 try:
-    res = urllib2.urlopen("https://api.github.com/orgs/ionian-uni-ieee/repos")
+    res = urllib2.urlopen("https://api.github.com/repos/ionian-uni-ieee/git")
 except Exception as e:
     print(e)
     raise SystemExit
 
 try:
-    repos = json.load(res)
+    repo = json.load(res)
 except Exception as e:
     print(e)
     raise SystemExit
@@ -20,15 +20,10 @@ except Exception as e:
     raise SystemExit
 
 
-for repo in repos:
-    name = repo['name']
-    stars = repo['stargazers_count']
-    forks = repo['forks_count']
+name = repo['name']
+stars = repo['stargazers_count']
 
-    print('------------------------')
-    print('Name: ' + name)
-    print('Forks: ' + str(forks))
-    print('Stars: ' + str(stars))
-    # add print statement here
-    print('------------------------')
-    print('')
+print('------------------------')
+print('Name: ' + name)
+print('Stars: ' + str(stars))
+print('------------------------')
