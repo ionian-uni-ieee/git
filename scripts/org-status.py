@@ -28,3 +28,4 @@ print('Name: ' + name)
 print('Stars: ' + str(stars))
 print('------------------------')
 #εγω οταν το τρεχω λόκαλι μονο για ενα ρέπο μου βγάζει (για το /git δλδ) αρα μάλλον δεν πειραζω κατι
+#wait i did it! highkey shooketh
