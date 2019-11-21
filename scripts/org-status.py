@@ -1,3 +1,4 @@
+
 import json
 import urllib2
 
@@ -19,7 +20,6 @@ except Exception as e:
     print(e)
     raise SystemExit
 
-
 name = repo['name']
 stars = repo['stargazers_count']
 
@@ -27,3 +27,5 @@ print('------------------------')
 print('Name: ' + name)
 print('Stars: ' + str(stars))
 print('------------------------')
+#εγω οταν το τρεχω λόκαλι μονο για ενα ρέπο μου βγάζει (για το /git δλδ) αρα μάλλον δεν πειραζω κατι
+#wait i did it! highkey shooketh
